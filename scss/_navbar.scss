@@ -1,0 +1,54 @@
+$topbar-center-logo-bg: $primary-color;
+
+.topbar-center-logo {
+  background: $topbar-center-logo-bg;
+
+  .menu {
+    background: $topbar-center-logo-bg;
+
+    a {
+      color: $white;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 2px;
+      -o-transition:.5s;
+      -ms-transition:.5s;
+      -moz-transition:.5s;
+      -webkit-transition:.5s;
+      transition:.5s;
+    }
+    a:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+.topbar-center-logo .top-bar-center {
+  flex: 1 0 auto;
+
+  @include breakpoint(small only) {
+    display: none;
+  }
+}
+
+.topbar-center-logo-mobile {
+  background: $topbar-center-logo-bg;
+
+  .menu-icon {
+    vertical-align: text-top;
+  }
+}
+
+.logo {
+  width: 150px;
+  padding: 1rem 0;
+
+  .svg {
+    background: url('assets/sitelogic_logo_white.svg')
+  }
+
+  .no-svg {
+    background: url('assets/sitelogic_logo_white.png')
+  }
+}
